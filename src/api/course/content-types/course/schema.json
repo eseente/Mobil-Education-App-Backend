@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "courses",
+  "info": {
+    "singularName": "course",
+    "pluralName": "courses",
+    "displayName": "CourseList",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Images": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Topics": {
+      "type": "component",
+      "repeatable": true,
+      "component": "topics.course-list-topics"
+    },
+    "type": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

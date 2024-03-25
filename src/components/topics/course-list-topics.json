@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_topics_course_list_topics",
+  "info": {
+    "displayName": "CourseList-Topics",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "Content": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}
