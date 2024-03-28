@@ -1,5 +1,16 @@
 import type { Schema, Attribute } from '@strapi/strapi';
 
+export interface TopicsContent extends Schema.Component {
+  collectionName: 'components_topics_contents';
+  info: {
+    displayName: 'Content';
+  };
+  attributes: {
+    name: Attribute.String;
+    description: Attribute.Text;
+  };
+}
+
 export interface TopicsCourseListTopics extends Schema.Component {
   collectionName: 'components_topics_course_list_topics';
   info: {
@@ -8,7 +19,7 @@ export interface TopicsCourseListTopics extends Schema.Component {
   };
   attributes: {
     name: Attribute.String;
-    Content: Attribute.Media;
+    Content: Attribute.Component<'topics.content', true>;
   };
 }
 
@@ -27,6 +38,7 @@ export interface VideoTopicsVideoTopics extends Schema.Component {
 declare module '@strapi/types' {
   export module Shared {
     export interface Components {
+      'topics.content': TopicsContent;
       'topics.course-list-topics': TopicsCourseListTopics;
       'video-topics.video-topics': VideoTopicsVideoTopics;
     }

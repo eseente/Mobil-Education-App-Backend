@@ -10,15 +10,9 @@
       "type": "string"
     },
     "Content": {
-      "type": "media",
-      "multiple": true,
-      "required": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
+      "type": "component",
+      "repeatable": true,
+      "component": "topics.content"
     }
   }
 }
