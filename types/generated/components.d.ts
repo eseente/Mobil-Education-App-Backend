@@ -30,11 +30,12 @@ export interface VideoTopicsVideoTopics extends Schema.Component {
   collectionName: 'components_video_topics_video_topics';
   info: {
     displayName: 'Video-Topics';
+    description: '';
   };
   attributes: {
     name: Attribute.String;
-    description: Attribute.Blocks;
     videoURL: Attribute.String;
+    description: Attribute.Text;
   };
 }
 

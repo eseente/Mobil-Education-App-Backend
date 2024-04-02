@@ -1,19 +1,19 @@
 {
   "collectionName": "components_video_topics_video_topics",
   "info": {
-    "displayName": "Video-Topics"
+    "displayName": "Video-Topics",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "name": {
       "type": "string"
     },
-    "description": {
-      "type": "blocks",
-      "required": false
-    },
     "videoURL": {
       "type": "string"
+    },
+    "description": {
+      "type": "text"
     }
   }
 }
