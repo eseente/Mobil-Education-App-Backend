@@ -4,10 +4,13 @@ export interface TopicsContent extends Schema.Component {
   collectionName: 'components_topics_contents';
   info: {
     displayName: 'Content';
+    description: '';
   };
   attributes: {
     name: Attribute.String;
     description: Attribute.Text;
+    input: Attribute.Text;
+    output: Attribute.Text;
   };
 }
 
